@@ -2,6 +2,24 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
+    // function Submit(e) {
+    //     const formEle = document.querySelector("form");
+    //     const formDatab = new FormData(formEle);
+    //     fetch(
+    //       "https://script.google.com/macros/s/AKfycbxUX4hu2QEQ7r9TwrSo9vAHydDXv4VwtEDUacCifXaEecIH2bWHQSnFWtd9NdNIUVGDdQ/exec",
+    //       {
+    //         method: "POST",
+    //         body: formDatab
+    //       }
+    //     )
+    //       .then((res) => res.json())
+    //       .then((data) => {
+    //         console.log(data);
+    //       })
+    //       .catch((error) => {
+    //         console.log(error);
+    //       });
+    //   }
   return(
         <div id='body'>
             {/* <Header/> */}
@@ -14,9 +32,9 @@ export default function App() {
             />
 
             <Card2/> {/*3 screenshots*/}
-            <Methodology_card/>
+            <MethodologyCard/>
             <Purpose/>
-            {/* <WaitlistForm/> */}
+            <WaitlistForm/>
         </div>
     );
 }
@@ -44,7 +62,7 @@ const Card1 = (props) =>{
                 <br/>
                 <br/>
                 <span>
-                    <a href="/"><span className="waitlist-btn">JOIN THE WAITLIST FOR FREE</span></a>
+                    <a href="#waitlist-form"><span className="waitlist-btn">JOIN THE WAITLIST FOR FREE</span></a>
                 </span>
             </div>
 
@@ -101,7 +119,7 @@ const Card2 = () =>{
 }
 
 
-const Methodology_card = () =>{
+const MethodologyCard = () =>{
     return(
         <div className='method-card' >
             <div className="title-div">
@@ -185,3 +203,47 @@ const Purpose = () =>{
         </div>
     )
 }
+const WaitlistForm = () =>{
+    function Submit(e) {
+        const formEle = document.querySelector("form");
+        const formDatab = new FormData(formEle);
+        fetch(
+          "https://script.google.com/macros/s/AKfycbwaP8hc_R6WWQYQS4wtmu58EMym4a5ABn7E3jURIJPYvjhl9749exVKV_0BU0ocsrKL/exec",
+          {
+            method: "POST",
+            body: formDatab
+          }
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+}
+    return (
+        <div className="form-card" id="waitlist-form">
+         <div className="title-div-form">
+                JOIN THE WAITLIST
+         </div>
+          <div>
+            <form className="form" onSubmit={(e) => Submit(e)}>
+              <label id="Name">Full Name*</label>
+              <input name="Name" type="text" required/>
+
+              <label id="Email" >Email*</label>
+              <input name="Email" type="email" required/>
+
+              <label id="Phone">Phone(Optional)</label>
+              <input name="Phone" type="text" />
+               <span>
+               <input name="Submit" type="submit" className="waitlist-submit-btn" value={"Let me In"}/>
+               </span>
+              
+            </form>
+          </div>
+        </div>
+      );
+}
+
