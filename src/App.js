@@ -5,7 +5,7 @@ export default function App() {
   return(
         <div id='body'>
             {/* <Header/> */}
-            <Card 
+            <Card1 
                 className='section1'
                 img={require('./images/img1.png')}
                 title='A Proven Way To Reduce Screen Time For Free' 
@@ -13,55 +13,15 @@ export default function App() {
                  who wants to take back control of thier time and be more productive'
             />
 
-            <Card2/>
-            {/* <Card2 
-                className='section bg-grey'
-                img={require('./images/iPhone1.jpg')} 
-                // title='Our Values'
-                description='Select your most used apps and set up a daily limit'
-            />
-            <Card2 
-                className='section bg-grey'
-                img={require('./images/iPhone2.jpg')} 
-                // title='Our Values'
-                description='You can put some money at stake to increase your motivation'
-            />
-            <Card2 
-                className='section bg-grey'
-                img={require('./images/iPhone3.jpg')} 
-                // title='Our Values'
-                description='After the set limit is reached you can no longer use the app for the day unless you pay the amount.'
-            /> */}
-
-            {/* <Methodology_card 
-                className='section'
-                img='./images/bg.png' 
-                title='Our Methodology' 
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.'
-            /> */}
+            <Card2/> {/*3 screenshots*/}
             <Methodology_card/>
-            <Purpose 
-                className='section'
-                img='./images/bg.png' 
-                title='Who is this for' 
-                description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.'
-            />
+            <Purpose/>
             {/* <WaitlistForm/> */}
         </div>
     );
 }
 
-const Card = (props) =>{
+const Card1 = (props) =>{
     return(
         <div className={props.className} >
             <div className="small-div">
@@ -179,59 +139,49 @@ const Methodology_card = () =>{
         </div>
     )
 }
-// const Methodology_card = (props) =>{
-//     return(
-//         <div className={props.className} >
-//             {/* <div className="small-div">
-//                 <i className={props.className}></i>
-//                 <img src={props.img} alt='' width={280} height={139} />
-//             </div> */}
-
-//             <div className="big-div">
-//             <i className={props.className}></i>
-                
-//                 <span className='div-title'>
-//                     {props.title}
-//                 </span>
-//                 <span>
-//                 <img src={props.img} alt='' width={280} height={139} />
-//                 </span>
-                
-                
-//                 <span>
-//                     {props.description}
-//                 </span>
-//             </div>
-//         </div>
-//     )
-// }
-
-
-
-const Purpose = (props) =>{
+const Purpose = () =>{
     return(
-        <div className={props.className} >
-            {/* <div className="small-div">
-                <i className={props.className}></i>
-                <img src={props.img} alt='' width={280} height={139} />
-            </div> */}
+        <div className='purpose-card' >
+            <div className="title-div">
+                Who is this for?
+            </div>
 
-            <div className="big-div">
-            <i className={props.className}></i>
-                
-                <span className='div-title'>
-                    {props.title}
-                </span>
-                <span>
-                <img src={props.img} alt='' width={280} height={139} />
-                </span>
-                
-                
-                <span>
-                    {props.description}
-                </span>
+            <div className="second-div">
+              <div className="point4">
+                <div>
+                  <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                </div>
+                <div className="point-des">
+                    I want to reduce my <b>screen time</b>
+                </div>
+              </div>
+
+              <div className="point5">
+               <div>
+                <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                </div>
+                <div className="point-des">
+                I want to get things done without <b>proscrastinating</b>
+                </div>
+               </div>
+
+               <div className="point6">
+                <div>
+                 <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                </div> 
+                <div className="point-des">
+                I want to reduce my <b>instagram</b> usage
+                </div>
+               </div>
+               <div className="point7">
+                <div>
+                 <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                </div> 
+                <div className="point-des">
+                I want to take <b>control</b> of my life
+                </div>
+               </div>
             </div>
         </div>
     )
 }
-
