@@ -2,24 +2,6 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-    // function Submit(e) {
-    //     const formEle = document.querySelector("form");
-    //     const formDatab = new FormData(formEle);
-    //     fetch(
-    //       "https://script.google.com/macros/s/AKfycbxUX4hu2QEQ7r9TwrSo9vAHydDXv4VwtEDUacCifXaEecIH2bWHQSnFWtd9NdNIUVGDdQ/exec",
-    //       {
-    //         method: "POST",
-    //         body: formDatab
-    //       }
-    //     )
-    //       .then((res) => res.json())
-    //       .then((data) => {
-    //         console.log(data);
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //       });
-    //   }
   return(
         <div id='body'>
             {/* <Header/> */}
