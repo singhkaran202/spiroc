@@ -33,13 +33,12 @@ const Card1 = (props) =>{
                 </span>
                 <br/>
                 <br/>
-                <span className="red-text">1 Min Read</span>
                 <br/>
-                <br/>
-                
                 <span className="div-des">
                     {props.description}
                 </span>
+              
+                <br/>
                 <br/>
                 <br/>
                 <br/>
@@ -84,7 +83,7 @@ const Card2 = () =>{
             </div>
          </div>
 
-          <div className="comp1 comp3">
+          <div className="comp3">
            <div>
                 <img src={require('./images/iPhone3.jpg')} alt=''  className="image-div" />
             </div> 
@@ -149,7 +148,7 @@ const Purpose = () =>{
             <div className="second-div">
               <div className="point4">
                 <div>
-                  <img src={require('./images/icon.png')} alt=''  className="icon-img"/>
+                  <img src={require('./images/icon.png')} alt=''  className="icon-img img1-ic"/>
                 </div>
                 <div className="point-des">
                     I want to reduce my <b>screen time</b>
