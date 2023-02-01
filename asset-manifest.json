@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/spiroc/static/css/main.65a7d564.css",
+    "main.js": "/spiroc/static/js/main.a4aea246.js",
+    "static/media/img1.png": "/spiroc/static/media/img1.52c789b551dc9436fd3a.png",
+    "static/media/iPhone1.jpg": "/spiroc/static/media/iPhone1.4be4a4299f07aa7c8350.jpg",
+    "static/media/iPhone3.jpg": "/spiroc/static/media/iPhone3.dff1da2047160168deba.jpg",
+    "static/media/iPhone2.jpg": "/spiroc/static/media/iPhone2.5029a7f9703f4df95a95.jpg",
+    "static/media/spiroc_logo2.png": "/spiroc/static/media/spiroc_logo2.26723cd1d29cb472f1ce.png",
+    "static/media/hand_icon.png": "/spiroc/static/media/hand_icon.7803252f909caf87c326.png",
+    "static/media/icon.png": "/spiroc/static/media/icon.62f0fc329f3b99d01395.png",
+    "index.html": "/spiroc/index.html",
+    "main.65a7d564.css.map": "/spiroc/static/css/main.65a7d564.css.map",
+    "main.a4aea246.js.map": "/spiroc/static/js/main.a4aea246.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65a7d564.css",
+    "static/js/main.a4aea246.js"
+  ]
+}
