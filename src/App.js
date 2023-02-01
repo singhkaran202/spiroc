@@ -1,7 +1,15 @@
 import React from "react";
+import { useEffect } from "react";
 import "./styles.css";
+import ReactGA from "react-ga";
+
+const TRACKING_ID ="UA-255939443-1";
+ReactGA.initialize(TRACKING_ID); 
 
 export default function App() {
+useEffect(() =>{
+  ReactGA.pageview(window.location.pathname)
+}, []);
   return(
         <div id='body'>
             {/* <Header/> */}
