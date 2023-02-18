@@ -16,5 +16,3 @@ To deploy the website, you will need to create a GitHub Pages site for the repos
 
 To automatically deploy changes to the website when you push to the main branch, you can use a GitHub Actions workflow. A sample workflow is included in the repository at .github/workflows/deploy.yml. To use the workflow, you will need to create a personal access token with the repo scope and add it as a secret to the repository. You will also need to update the deploy-to-gh-pages step with your GitHub username and repository name.
 
-## License
-This website is released under the MIT License. See LICENSE for more information.
